@@ -2,14 +2,14 @@ version = 1
 revision = 3
 requires-python = ">=3.10, <3.14"
 resolution-markers = [
-    "python_full_version < '3.11' and platform_python_implementation == 'PyPy'",
-    "python_full_version < '3.11' and platform_python_implementation != 'PyPy'",
-    "python_full_version == '3.11.*' and platform_python_implementation == 'PyPy'",
-    "python_full_version == '3.11.*' and platform_python_implementation != 'PyPy'",
-    "python_full_version == '3.12.*' and platform_python_implementation == 'PyPy'",
-    "python_full_version == '3.12.*' and platform_python_implementation != 'PyPy'",
     "python_full_version >= '3.13' and platform_python_implementation == 'PyPy'",
     "python_full_version >= '3.13' and platform_python_implementation != 'PyPy'",
+    "python_full_version == '3.12.*' and platform_python_implementation == 'PyPy'",
+    "python_full_version == '3.12.*' and platform_python_implementation != 'PyPy'",
+    "python_full_version == '3.11.*' and platform_python_implementation == 'PyPy'",
+    "python_full_version == '3.11.*' and platform_python_implementation != 'PyPy'",
+    "python_full_version < '3.11' and platform_python_implementation == 'PyPy'",
+    "python_full_version < '3.11' and platform_python_implementation != 'PyPy'",
 ]
 
 [manifest]
@@ -935,7 +935,7 @@ name = "coloredlogs"
 version = "15.0.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
-    { name = "humanfriendly", marker = "python_full_version < '3.11'" },
+    { name = "humanfriendly" },
 ]
 sdist = { url = "https://files.pythonhosted.org/packages/cc/c7/eed8f27100517e8c0e6b923d5f0845d0cb99763da6fdee00478f91db7325/coloredlogs-15.0.1.tar.gz", hash = "sha256:7c991aa71a4577af2f82600d8f8f3a89f936baeaf9b50a9c197da014e5bf16b0", size = 278520, upload-time = "2021-06-11T10:22:45.202Z" }
 wheels = [
@@ -1490,7 +1490,7 @@ requires-dist = [
     { name = "selenium", marker = "extra == 'selenium'", specifier = ">=4.27.1" },
     { name = "serpapi", marker = "extra == 'serpapi'", specifier = ">=0.1.5" },
     { name = "singlestoredb", marker = "extra == 'singlestore'", specifier = ">=1.12.4" },
-    { name = "snowflake-connector-python", marker = "extra == 'snowflake'", specifier = ">=3.12.4" },
+    { name = "snowflake-connector-python", marker = "extra == 'snowflake'", specifier = ">=4.7.3" },
     { name = "snowflake-sqlalchemy", marker = "extra == 'snowflake'", specifier = ">=1.7.3" },
     { name = "spider-client", marker = "extra == 'spider-client'", specifier = ">=0.1.25" },
     { name = "sqlalchemy", marker = "extra == 'singlestore'", specifier = ">=2.0.40" },
@@ -1931,7 +1931,7 @@ name = "exceptiongroup"
 version = "1.3.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
-    { name = "typing-extensions", marker = "python_full_version < '3.11'" },
+    { name = "typing-extensions" },
 ]
 sdist = { url = "https://files.pythonhosted.org/packages/50/79/66800aadf48771f6b62f7eb014e352e5d06856655206165d775e675a02c9/exceptiongroup-1.3.1.tar.gz", hash = "sha256:8b412432c6055b0b7d14c310000ae93352ed6754f70fa8f7c34141f91c4e3219", size = 30371, upload-time = "2025-11-21T23:01:54.787Z" }
 wheels = [
@@ -1984,15 +1984,15 @@ resolution-markers = [
     "python_full_version >= '3.13' and platform_python_implementation != 'PyPy'",
 ]
 dependencies = [
-    { name = "huggingface-hub", marker = "python_full_version >= '3.13'" },
-    { name = "loguru", marker = "python_full_version >= '3.13'" },
-    { name = "mmh3", marker = "python_full_version >= '3.13'" },
-    { name = "numpy", marker = "python_full_version >= '3.13'" },
-    { name = "pillow", marker = "python_full_version >= '3.13'" },
-    { name = "py-rust-stemmers", marker = "python_full_version >= '3.13'" },
-    { name = "requests", marker = "python_full_version >= '3.13'" },
-    { name = "tokenizers", marker = "python_full_version >= '3.13'" },
-    { name = "tqdm", marker = "python_full_version >= '3.13'" },
+    { name = "huggingface-hub" },
+    { name = "loguru" },
+    { name = "mmh3" },
+    { name = "numpy" },
+    { name = "pillow" },
+    { name = "py-rust-stemmers" },
+    { name = "requests" },
+    { name = "tokenizers" },
+    { name = "tqdm" },
 ]
 sdist = { url = "https://files.pythonhosted.org/packages/65/f6/e8d3d9d487f95b698c9ff0d04d4e050d8fca9fa4cba58cff60fd519d1976/fastembed-0.7.3.tar.gz", hash = "sha256:04e95eb5ccc706513166c23bf8e5429ed160c5783b7b11514431a77624d480a5", size = 66561, upload-time = "2025-08-29T11:19:46.521Z" }
 wheels = [
@@ -2004,24 +2004,24 @@ name = "fastembed"
 version = "0.7.4"
 source = { registry = "https://pypi.org/simple" }
 resolution-markers = [
-    "python_full_version < '3.11' and platform_python_implementation == 'PyPy'",
-    "python_full_version < '3.11' and platform_python_implementation != 'PyPy'",
-    "python_full_version == '3.11.*' and platform_python_implementation == 'PyPy'",
-    "python_full_version == '3.11.*' and platform_python_implementation != 'PyPy'",
     "python_full_version == '3.12.*' and platform_python_implementation == 'PyPy'",
     "python_full_version == '3.12.*' and platform_python_implementation != 'PyPy'",
+    "python_full_version == '3.11.*' and platform_python_implementation == 'PyPy'",
+    "python_full_version == '3.11.*' and platform_python_implementation != 'PyPy'",
+    "python_full_version < '3.11' and platform_python_implementation == 'PyPy'",
+    "python_full_version < '3.11' and platform_python_implementation != 'PyPy'",
 ]
 dependencies = [
-    { name = "huggingface-hub", marker = "python_full_version < '3.13'" },
-    { name = "loguru", marker = "python_full_version < '3.13'" },
-    { name = "mmh3", marker = "python_full_version < '3.13'" },
-    { name = "numpy", marker = "python_full_version < '3.13'" },
-    { name = "onnxruntime", marker = "python_full_version < '3.11'" },
-    { name = "pillow", marker = "python_full_version < '3.13'" },
-    { name = "py-rust-stemmers", marker = "python_full_version < '3.13'" },
-    { name = "requests", marker = "python_full_version < '3.13'" },
-    { name = "tokenizers", marker = "python_full_version < '3.13'" },
-    { name = "tqdm", marker = "python_full_version < '3.13'" },
+    { name = "huggingface-hub" },
+    { name = "loguru" },
+    { name = "mmh3" },
+    { name = "numpy" },
+    { name = "onnxruntime", marker = "python_full_version < '3.11' or python_full_version >= '3.13'" },
+    { name = "pillow" },
+    { name = "py-rust-stemmers" },
+    { name = "requests" },
+    { name = "tokenizers" },
+    { name = "tqdm" },
 ]
 sdist = { url = "https://files.pythonhosted.org/packages/4c/c2/9c708680de1b54480161e0505f9d6d3d8eb47a1dc1a1f7f3c5106ba355d2/fastembed-0.7.4.tar.gz", hash = "sha256:8b8a4ea860ca295002f4754e8f5820a636e1065a9444959e18d5988d7f27093b", size = 68807, upload-time = "2025-12-05T12:08:10.447Z" }
 wheels = [
@@ -2634,7 +2634,7 @@ name = "humanfriendly"
 version = "10.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
-    { name = "pyreadline3", marker = "python_full_version < '3.11' and sys_platform == 'win32'" },
+    { name = "pyreadline3", marker = "sys_platform == 'win32'" },
 ]
 sdist = { url = "https://files.pythonhosted.org/packages/cc/3f/2c29224acb2e2df4d2046e4c73ee2662023c58ff5b113c4c1adac0886c43/humanfriendly-10.0.tar.gz", hash = "sha256:6b0b831ce8f15f7300721aa49829fc4e83921a9a301cc7f606be6686a2288ddc", size = 360702, upload-time = "2021-09-17T21:40:43.31Z" }
 wheels = [
@@ -2669,15 +2669,15 @@ name = "ibm-cos-sdk"
 version = "2.14.2"
 source = { registry = "https://pypi.org/simple" }
 resolution-markers = [
-    "python_full_version < '3.11' and platform_python_implementation == 'PyPy'",
-    "python_full_version == '3.11.*' and platform_python_implementation == 'PyPy'",
-    "python_full_version == '3.12.*' and platform_python_implementation == 'PyPy'",
     "python_full_version >= '3.13' and platform_python_implementation == 'PyPy'",
+    "python_full_version == '3.12.*' and platform_python_implementation == 'PyPy'",
+    "python_full_version == '3.11.*' and platform_python_implementation == 'PyPy'",
+    "python_full_version < '3.11' and platform_python_implementation == 'PyPy'",
 ]
 dependencies = [
-    { name = "ibm-cos-sdk-core", version = "2.14.2", source = { registry = "https://pypi.org/simple" }, marker = "platform_python_implementation == 'PyPy'" },
-    { name = "ibm-cos-sdk-s3transfer", version = "2.14.2", source = { registry = "https://pypi.org/simple" }, marker = "platform_python_implementation == 'PyPy'" },
-    { name = "jmespath", marker = "platform_python_implementation == 'PyPy'" },
+    { name = "ibm-cos-sdk-core", version = "2.14.2", source = { registry = "https://pypi.org/simple" } },
+    { name = "ibm-cos-sdk-s3transfer", version = "2.14.2", source = { registry = "https://pypi.org/simple" } },
+    { name = "jmespath" },
 ]
 sdist = { url = "https://files.pythonhosted.org/packages/08/0f/976e187ba09f5efee94a371f0d65edca82714975de7e71bf6ad8d30f20a7/ibm_cos_sdk-2.14.2.tar.gz", hash = "sha256:d859422c1dfd03e52cd66acbb2b45b4c944a390725c3a91d4a8e003f0cfc4e4b", size = 58847, upload-time = "2025-06-18T05:04:01.193Z" }
 
@@ -2686,15 +2686,15 @@ name = "ibm-cos-sdk"
 version = "2.14.3"
 source = { registry = "https://pypi.org/simple" }
 resolution-markers = [
-    "python_full_version < '3.11' and platform_python_implementation != 'PyPy'",
-    "python_full_version == '3.11.*' and platform_python_implementation != 'PyPy'",
-    "python_full_version == '3.12.*' and platform_python_implementation != 'PyPy'",
     "python_full_version >= '3.13' and platform_python_implementation != 'PyPy'",
+    "python_full_version == '3.12.*' and platform_python_implementation != 'PyPy'",
+    "python_full_version == '3.11.*' and platform_python_implementation != 'PyPy'",
+    "python_full_version < '3.11' and platform_python_implementation != 'PyPy'",
 ]
 dependencies = [
-    { name = "ibm-cos-sdk-core", version = "2.14.3", source = { registry = "https://pypi.org/simple" }, marker = "platform_python_implementation != 'PyPy'" },
-    { name = "ibm-cos-sdk-s3transfer", version = "2.14.3", source = { registry = "https://pypi.org/simple" }, marker = "platform_python_implementation != 'PyPy'" },
-    { name = "jmespath", marker = "platform_python_implementation != 'PyPy'" },
+    { name = "ibm-cos-sdk-core", version = "2.14.3", source = { registry = "https://pypi.org/simple" } },
+    { name = "ibm-cos-sdk-s3transfer", version = "2.14.3", source = { registry = "https://pypi.org/simple" } },
+    { name = "jmespath" },
 ]
 sdist = { url = "https://files.pythonhosted.org/packages/98/b8/b99f17ece72d4bccd7e75539b9a294d0f73ace5c6c475d8f2631afd6f65b/ibm_cos_sdk-2.14.3.tar.gz", hash = "sha256:643b6f2aa1683adad7f432df23407d11ae5adb9d9ad01214115bee77dc64364a", size = 58831, upload-time = "2025-08-01T06:35:51.722Z" }
 
@@ -2703,16 +2703,16 @@ name = "ibm-cos-sdk-core"
 version = "2.14.2"
 source = { registry = "https://pypi.org/simple" }
 resolution-markers = [
-    "python_full_version < '3.11' and platform_python_implementation == 'PyPy'",
-    "python_full_version == '3.11.*' and platform_python_implementation == 'PyPy'",
-    "python_full_version == '3.12.*' and platform_python_implementation == 'PyPy'",
     "python_full_version >= '3.13' and platform_python_implementation == 'PyPy'",
+    "python_full_version == '3.12.*' and platform_python_implementation == 'PyPy'",
+    "python_full_version == '3.11.*' and platform_python_implementation == 'PyPy'",
+    "python_full_version < '3.11' and platform_python_implementation == 'PyPy'",
 ]
 dependencies = [
-    { name = "jmespath", marker = "platform_python_implementation == 'PyPy'" },
-    { name = "python-dateutil", marker = "platform_python_implementation == 'PyPy'" },
-    { name = "requests", marker = "platform_python_implementation == 'PyPy'" },
-    { name = "urllib3", marker = "platform_python_implementation == 'PyPy'" },
+    { name = "jmespath" },
+    { name = "python-dateutil" },
+    { name = "requests" },
+    { name = "urllib3" },
 ]
 sdist = { url = "https://files.pythonhosted.org/packages/a5/db/e913f210d66c2ad09521925f29754fb9b7240da11238a29a0186ebad4ffa/ibm_cos_sdk_core-2.14.2.tar.gz", hash = "sha256:d594b2af58f70e892aa3b0f6ae4b0fa5d412422c05beeba083d4561b5fad91b4", size = 1103504, upload-time = "2025-06-18T05:03:42.969Z" }
 
@@ -2721,16 +2721,16 @@ name = "ibm-cos-sdk-core"
 version = "2.14.3"
 source = { registry = "https://pypi.org/simple" }
 resolution-markers = [
-    "python_full_version < '3.11' and platform_python_implementation != 'PyPy'",
-    "python_full_version == '3.11.*' and platform_python_implementation != 'PyPy'",
-    "python_full_version == '3.12.*' and platform_python_implementation != 'PyPy'",
     "python_full_version >= '3.13' and platform_python_implementation != 'PyPy'",
+    "python_full_version == '3.12.*' and platform_python_implementation != 'PyPy'",
+    "python_full_version == '3.11.*' and platform_python_implementation != 'PyPy'",
+    "python_full_version < '3.11' and platform_python_implementation != 'PyPy'",
 ]
 dependencies = [
-    { name = "jmespath", marker = "platform_python_implementation != 'PyPy'" },
-    { name = "python-dateutil", marker = "platform_python_implementation != 'PyPy'" },
-    { name = "requests", marker = "platform_python_implementation != 'PyPy'" },
-    { name = "urllib3", marker = "platform_python_implementation != 'PyPy'" },
+    { name = "jmespath" },
+    { name = "python-dateutil" },
+    { name = "requests" },
+    { name = "urllib3" },
 ]
 sdist = { url = "https://files.pythonhosted.org/packages/7e/45/80c23aa1e13175a9deefe43cbf8e853a3d3bfc8dfa8b6d6fe83e5785fe21/ibm_cos_sdk_core-2.14.3.tar.gz", hash = "sha256:85dee7790c92e8db69bf39dae4c02cac211e3c1d81bb86e64fa2d1e929674623", size = 1103637, upload-time = "2025-08-01T06:35:41.645Z" }
 
@@ -2739,13 +2739,13 @@ name = "ibm-cos-sdk-s3transfer"
 version = "2.14.2"
 source = { registry = "https://pypi.org/simple" }
 resolution-markers = [
-    "python_full_version < '3.11' and platform_python_implementation == 'PyPy'",
-    "python_full_version == '3.11.*' and platform_python_implementation == 'PyPy'",
-    "python_full_version == '3.12.*' and platform_python_implementation == 'PyPy'",
     "python_full_version >= '3.13' and platform_python_implementation == 'PyPy'",
+    "python_full_version == '3.12.*' and platform_python_implementation == 'PyPy'",
+    "python_full_version == '3.11.*' and platform_python_implementation == 'PyPy'",
+    "python_full_version < '3.11' and platform_python_implementation == 'PyPy'",
 ]
 dependencies = [
-    { name = "ibm-cos-sdk-core", version = "2.14.2", source = { registry = "https://pypi.org/simple" }, marker = "platform_python_implementation == 'PyPy'" },
+    { name = "ibm-cos-sdk-core", version = "2.14.2", source = { registry = "https://pypi.org/simple" } },
 ]
 sdist = { url = "https://files.pythonhosted.org/packages/8e/ca/3c4c48c2a180e3410d08b400435b72648e6630c2d556beb126b7a21a78d7/ibm_cos_sdk_s3transfer-2.14.2.tar.gz", hash = "sha256:01d1cb14c0decaeef273979da7a13f7a874f1d4c542ff3ae0a186c7b090569bc", size = 139579, upload-time = "2025-06-18T05:03:48.841Z" }
 
@@ -2754,13 +2754,13 @@ name = "ibm-cos-sdk-s3transfer"
 version = "2.14.3"
 source = { registry = "https://pypi.org/simple" }
 resolution-markers = [
-    "python_full_version < '3.11' and platform_python_implementation != 'PyPy'",
-    "python_full_version == '3.11.*' and platform_python_implementation != 'PyPy'",
-    "python_full_version == '3.12.*' and platform_python_implementation != 'PyPy'",
     "python_full_version >= '3.13' and platform_python_implementation != 'PyPy'",
+    "python_full_version == '3.12.*' and platform_python_implementation != 'PyPy'",
+    "python_full_version == '3.11.*' and platform_python_implementation != 'PyPy'",
+    "python_full_version < '3.11' and platform_python_implementation != 'PyPy'",
 ]
 dependencies = [
-    { name = "ibm-cos-sdk-core", version = "2.14.3", source = { registry = "https://pypi.org/simple" }, marker = "platform_python_implementation != 'PyPy'" },
+    { name = "ibm-cos-sdk-core", version = "2.14.3", source = { registry = "https://pypi.org/simple" } },
 ]
 sdist = { url = "https://files.pythonhosted.org/packages/f3/ff/c9baf0997266d398ae08347951a2970e5e96ed6232ed0252f649f2b9a7eb/ibm_cos_sdk_s3transfer-2.14.3.tar.gz", hash = "sha256:2251ebfc4a46144401e431f4a5d9f04c262a0d6f95c88a8e71071da056e55f72", size = 139594, upload-time = "2025-08-01T06:35:46.403Z" }
 
@@ -4603,12 +4603,12 @@ name = "onnxruntime"
 version = "1.23.2"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
-    { name = "coloredlogs", marker = "python_full_version < '3.11'" },
-    { name = "flatbuffers", marker = "python_full_version < '3.11'" },
-    { name = "numpy", marker = "python_full_version < '3.11'" },
-    { name = "packaging", marker = "python_full_version < '3.11'" },
-    { name = "protobuf", marker = "python_full_version < '3.11'" },
-    { name = "sympy", marker = "python_full_version < '3.11'" },
+    { name = "coloredlogs" },
+    { name = "flatbuffers" },
+    { name = "numpy" },
+    { name = "packaging" },
+    { name = "protobuf" },
+    { name = "sympy" },
 ]
 wheels = [
     { url = "https://files.pythonhosted.org/packages/35/d6/311b1afea060015b56c742f3531168c1644650767f27ef40062569960587/onnxruntime-1.23.2-cp310-cp310-macosx_13_0_arm64.whl", hash = "sha256:a7730122afe186a784660f6ec5807138bf9d792fa1df76556b27307ea9ebcbe3", size = 17195934, upload-time = "2025-10-27T23:06:14.143Z" },
@@ -7168,18 +7168,18 @@ name = "selenium"
 version = "4.32.0"
 source = { registry = "https://pypi.org/simple" }
 resolution-markers = [
-    "python_full_version < '3.11' and platform_python_implementation == 'PyPy'",
-    "python_full_version == '3.11.*' and platform_python_implementation == 'PyPy'",
-    "python_full_version == '3.12.*' and platform_python_implementation == 'PyPy'",
     "python_full_version >= '3.13' and platform_python_implementation == 'PyPy'",
+    "python_full_version == '3.12.*' and platform_python_implementation == 'PyPy'",
+    "python_full_version == '3.11.*' and platform_python_implementation == 'PyPy'",
+    "python_full_version < '3.11' and platform_python_implementation == 'PyPy'",
 ]
 dependencies = [
-    { name = "certifi", marker = "platform_python_implementation == 'PyPy'" },
-    { name = "trio", marker = "platform_python_implementation == 'PyPy'" },
-    { name = "trio-websocket", marker = "platform_python_implementation == 'PyPy'" },
-    { name = "typing-extensions", marker = "platform_python_implementation == 'PyPy'" },
-    { name = "urllib3", marker = "platform_python_implementation == 'PyPy'" },
-    { name = "websocket-client", marker = "platform_python_implementation == 'PyPy'" },
+    { name = "certifi" },
+    { name = "trio" },
+    { name = "trio-websocket" },
+    { name = "typing-extensions" },
+    { name = "urllib3" },
+    { name = "websocket-client" },
 ]
 sdist = { url = "https://files.pythonhosted.org/packages/54/2d/fafffe946099033ccf22bf89e12eede14c1d3c5936110c5f6f2b9830722c/selenium-4.32.0.tar.gz", hash = "sha256:b9509bef4056f4083772abb1ae19ff57247d617a29255384b26be6956615b206", size = 870997, upload-time = "2025-05-02T20:35:27.325Z" }
 wheels = [
@@ -7191,21 +7191,21 @@ name = "selenium"
 version = "4.40.0"
 source = { registry = "https://pypi.org/simple" }
 resolution-markers = [
-    "python_full_version < '3.11' and platform_python_implementation != 'PyPy'",
-    "python_full_version == '3.11.*' and platform_python_implementation != 'PyPy'",
-    "python_full_version == '3.12.*' and platform_python_implementation != 'PyPy'",
     "python_full_version >= '3.13' and platform_python_implementation != 'PyPy'",
+    "python_full_version == '3.12.*' and platform_python_implementation != 'PyPy'",
+    "python_full_version == '3.11.*' and platform_python_implementation != 'PyPy'",
+    "python_full_version < '3.11' and platform_python_implementation != 'PyPy'",
 ]
 dependencies = [
-    { name = "certifi", marker = "platform_python_implementation != 'PyPy'" },
-    { name = "trio", marker = "platform_python_implementation != 'PyPy'" },
-    { name = "trio-typing", marker = "platform_python_implementation != 'PyPy'" },
-    { name = "trio-websocket", marker = "platform_python_implementation != 'PyPy'" },
-    { name = "types-certifi", marker = "platform_python_implementation != 'PyPy'" },
-    { name = "types-urllib3", marker = "platform_python_implementation != 'PyPy'" },
-    { name = "typing-extensions", marker = "platform_python_implementation != 'PyPy'" },
-    { name = "urllib3", marker = "platform_python_implementation != 'PyPy'" },
-    { name = "websocket-client", marker = "platform_python_implementation != 'PyPy'" },
+    { name = "certifi" },
+    { name = "trio" },
+    { name = "trio-typing" },
+    { name = "trio-websocket" },
+    { name = "types-certifi" },
+    { name = "types-urllib3" },
+    { name = "typing-extensions" },
+    { name = "urllib3" },
+    { name = "websocket-client" },
 ]
 sdist = { url = "https://files.pythonhosted.org/packages/66/ef/a5727fa7b33d20d296322adf851b76072d8d3513e1b151969d3228437faf/selenium-4.40.0.tar.gz", hash = "sha256:a88f5905d88ad0b84991c2386ea39e2bbde6d6c334be38df5842318ba98eaa8c", size = 930444, upload-time = "2026-01-18T23:12:31.565Z" }
 wheels = [
@@ -7379,7 +7379,7 @@ wheels = [
 
 [[package]]
 name = "snowflake-connector-python"
-version = "4.3.0"
+version = "4.7.3"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "asn1crypto" },
@@ -7399,30 +7399,29 @@ dependencies = [
     { name = "sortedcontainers" },
     { name = "tomlkit" },
     { name = "typing-extensions" },
-    { name = "urllib3" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/20/2f/9b0d1ea2196eeb32e9ac3f9cdf0cfc516ad3788333a75f197c3f55888f70/snowflake_connector_python-4.3.0.tar.gz", hash = "sha256:79f150297b39cfd2481b732554fc4d68b43c83c82eb01e670cc4051cffc089d6", size = 922395, upload-time = "2026-02-12T10:42:31.868Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/00/2c/bb5ecbd0af9f24b743de2d4a44497be2bdab0e4afcdcd23d96998a2f8d18/snowflake_connector_python-4.7.3.tar.gz", hash = "sha256:0f93139c3502c3d23139561b123492c09c33ab12a30956649a01e2cb04f06583", size = 968493, upload-time = "2026-09-03T14:13:37.975Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/eb/7a/44267971eeef7385e4a26aa66f94b5bdc3ef736bcc9b00942b900827faae/snowflake_connector_python-4.3.0-cp310-cp310-macosx_11_0_arm64.whl", hash = "sha256:e3044e6a237b35f750394f199f5e3800dfeb3227c4c8562584877e814d2dc89a", size = 11916166, upload-time = "2026-02-12T10:42:34.457Z" },
-    { url = "https://files.pythonhosted.org/packages/60/d8/e969f1fcab564f8bcabd26a06b64c345c0acee16c3dc9205140b9b7f5c0b/snowflake_connector_python-4.3.0-cp310-cp310-macosx_11_0_x86_64.whl", hash = "sha256:e5d360d65d42dd97cf82e688a1a7f235b9bc048b4949c9c5c7052ff2783c444e", size = 11929029, upload-time = "2026-02-12T10:42:37.071Z" },
-    { url = "https://files.pythonhosted.org/packages/67/5b/2b5fc947a2b1ef003be9b1a33f27fd505a99a6f312912ab935355cf37b89/snowflake_connector_python-4.3.0-cp310-cp310-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:ce55b93120f8b429010bf39cc02e739610b6da2ccdd34fcfc0df04849d0fd9d4", size = 2799195, upload-time = "2026-02-12T10:42:12.229Z" },
-    { url = "https://files.pythonhosted.org/packages/f4/da/c9e1a43ef6528dace99139a47ddcf6dab968e811ec222ac6dc51a7e12d74/snowflake_connector_python-4.3.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:7763c0d5f8e6326ec31f8972cc806fb6d3e07b06ca59f67dfcdf02a34219bcbc", size = 2828441, upload-time = "2026-02-12T10:42:14.449Z" },
-    { url = "https://files.pythonhosted.org/packages/bb/75/0a1f326831f00d506dcb5cae6a916da895a394350e22485d8cc00223aff1/snowflake_connector_python-4.3.0-cp310-cp310-win_amd64.whl", hash = "sha256:120463ca391d9deda3bdb185104ba847e12f73c86ef411cfcf827ce49b64d1af", size = 12067537, upload-time = "2026-02-12T10:43:01.705Z" },
-    { url = "https://files.pythonhosted.org/packages/7b/ea/d4206836b28ff74ad836414b811942c5bf2c70d3aec2f8985e4ea1890d50/snowflake_connector_python-4.3.0-cp311-cp311-macosx_11_0_arm64.whl", hash = "sha256:762ffa9673465ccc630aba438d648e0b1a2452ba49669a54a60d1625f36898f3", size = 11916055, upload-time = "2026-02-12T10:42:39.327Z" },
-    { url = "https://files.pythonhosted.org/packages/a4/55/b29070a5b2ec2f7bbb0051a724e5e6c8ba91a2da0086bd691b419d28c1f6/snowflake_connector_python-4.3.0-cp311-cp311-macosx_11_0_x86_64.whl", hash = "sha256:3e2ce47485862fa14ffbf2732f0fd02aa69a7c68a50d5f6286f34ed17527cf87", size = 11928750, upload-time = "2026-02-12T10:42:42.11Z" },
-    { url = "https://files.pythonhosted.org/packages/e3/48/b1e2d99b1dbb6698cb88385e800b43e30c575bcf5450810803526857b204/snowflake_connector_python-4.3.0-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:c6fa80373b82125552e691f47b603766ed783f3d90a5782564854aa224aee9d1", size = 2811711, upload-time = "2026-02-12T10:42:16.447Z" },
-    { url = "https://files.pythonhosted.org/packages/ca/51/a1b293fba2d63794283f487173a0c0d3b209464b915427a88d0cfa2408c2/snowflake_connector_python-4.3.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:676b56eedcc268b7e25a447e736eb8bf8bcacfbc71196c94d6f45746672ee6d5", size = 2841077, upload-time = "2026-02-12T10:42:18.461Z" },
-    { url = "https://files.pythonhosted.org/packages/fc/bf/48a0fdb8378e8bcf5448d6c07c495d2b76faa6b910ebcbcf57ffe7e56a0e/snowflake_connector_python-4.3.0-cp311-cp311-win_amd64.whl", hash = "sha256:55163c5d9b93e10d7217aabd56f776b16c0fe13774f8d5db9188824731da9586", size = 12067474, upload-time = "2026-02-12T10:43:04.462Z" },
-    { url = "https://files.pythonhosted.org/packages/54/b0/a23284f8c2ae977251071737287d7648fee4ef08de386f37eb6e971e8609/snowflake_connector_python-4.3.0-cp312-cp312-macosx_11_0_arm64.whl", hash = "sha256:7c18b5021ffa6de8313f2c7f0ae6050c36bcee7cb33bb23d40a7fdf3e0a751f2", size = 11915171, upload-time = "2026-02-12T10:42:44.602Z" },
-    { url = "https://files.pythonhosted.org/packages/b2/e7/2f91baf604acc4eb7795d7a25b4d414b81a82561dfac2d39c5e103da2947/snowflake_connector_python-4.3.0-cp312-cp312-macosx_11_0_x86_64.whl", hash = "sha256:9faa9280e41258fb479ec5395b6a17d3dbb316146832e436aed582b300de655e", size = 11926986, upload-time = "2026-02-12T10:42:47.455Z" },
-    { url = "https://files.pythonhosted.org/packages/a1/0b/09342214ec888192f9e7305d0a2d438531613f2a32ff5c2155e1e1964371/snowflake_connector_python-4.3.0-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:ca9d22c61f4e3d171b0adad3e9211747917c3a978dfb99564307c1ceadb0f0cd", size = 2867063, upload-time = "2026-02-12T10:42:20.261Z" },
-    { url = "https://files.pythonhosted.org/packages/b7/74/a1a2bd427394214bd7752e72fde257495a18d87d3457343ece9fee00e386/snowflake_connector_python-4.3.0-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:ac18b37e03a29014a9c91aac10c7dbdfa11134c620c6f93dd16f4b99b6a38c2a", size = 2899440, upload-time = "2026-02-12T10:42:22.424Z" },
-    { url = "https://files.pythonhosted.org/packages/32/5a/eda0e80c8cbbef24cfc4aa68587674d8ac0f15fded14e5abc296b8568005/snowflake_connector_python-4.3.0-cp312-cp312-win_amd64.whl", hash = "sha256:726435b2769135b6282601efb2cd8fd53f7deb1ff2fb7da93d28141fa3c8b17e", size = 12066477, upload-time = "2026-02-12T10:43:06.48Z" },
-    { url = "https://files.pythonhosted.org/packages/e6/7a/eda732425c713e07d7327f0c98473615814365e1a75c8d67c31c43ed2fa9/snowflake_connector_python-4.3.0-cp313-cp313-macosx_11_0_arm64.whl", hash = "sha256:e42dd9af46fa3ad0e61c1aa6a227357cace481916797ecb92dbb14adb61931e1", size = 11916032, upload-time = "2026-02-12T10:42:49.957Z" },
-    { url = "https://files.pythonhosted.org/packages/92/40/9ba14e500d1d92f12f0dac8d5b975606f0f15bee69c4ceadba64a8853b16/snowflake_connector_python-4.3.0-cp313-cp313-macosx_11_0_x86_64.whl", hash = "sha256:e96aaf23f2b021e0d2aac8ac1b541975cd1f6896d9115eefe0938114e694a562", size = 11927984, upload-time = "2026-02-12T10:42:52.39Z" },
-    { url = "https://files.pythonhosted.org/packages/c1/be/25125ba4b4a1bb211ad8eadff233549cd9a5152c77d92586cd5693ee608f/snowflake_connector_python-4.3.0-cp313-cp313-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:2e0f66acee330388815fb842f91a46c9cacdefdf02c816354e6adeca8c2c3f86", size = 2832570, upload-time = "2026-02-12T10:42:25.348Z" },
-    { url = "https://files.pythonhosted.org/packages/2d/c1/19144f2e590d55bce17e089017b5dca71fad46a2a0ddb7b1a69a4c91c5c9/snowflake_connector_python-4.3.0-cp313-cp313-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:b5a8d91c3e0127360bc3de605df9d02ea4d87e4524a50bf2e7c5c4200f9abf78", size = 2866972, upload-time = "2026-02-12T10:42:26.878Z" },
-    { url = "https://files.pythonhosted.org/packages/3f/28/8f4854bcf267f69387ea785758b3cc5fac1a13452359c234f2fc81eb8ffd/snowflake_connector_python-4.3.0-cp313-cp313-win_amd64.whl", hash = "sha256:c1356a2c615e120f913e5235fe87ff8aadbb479ad5a5ac5c0a84881d5fbe981d", size = 12066562, upload-time = "2026-02-12T10:43:08.846Z" },
+    { url = "https://files.pythonhosted.org/packages/58/cf/3b87959901fae953c1e7046f1866ff885ccbd319d006c9789ceb93970fe7/snowflake_connector_python-4.7.3-cp310-cp310-macosx_14_0_arm64.whl", hash = "sha256:0e1d89b90288f489daa5390f1867f746febba89dba713471ac24001209e6294e", size = 1197590, upload-time = "2026-09-03T14:13:39.952Z" },
+    { url = "https://files.pythonhosted.org/packages/bc/75/70d73e3b30ce59e0911fa1d3fbac69b83c1c026c69a318aff3c755f15cd6/snowflake_connector_python-4.7.3-cp310-cp310-macosx_14_0_x86_64.whl", hash = "sha256:c475773e202f7ed76e208039968e8419ca626366bc0190340f79a0d9c4b02c8f", size = 1210429, upload-time = "2026-09-03T14:13:41.303Z" },
+    { url = "https://files.pythonhosted.org/packages/61/d3/e139519a9fb35f7ed330baefd4cd305912557f9363d9753c563d29c675bd/snowflake_connector_python-4.7.3-cp310-cp310-manylinux2014_aarch64.manylinux_2_17_aarch64.whl", hash = "sha256:564b3df1b6e100b616e03be5feb95ddadc443bb00c03ad9ed4a6b192f701cd3a", size = 2880247, upload-time = "2026-09-03T14:13:17.943Z" },
+    { url = "https://files.pythonhosted.org/packages/9a/af/f77e89efe728fb5bc2f65cde04cde2792ab1c4ba7c08101eb0211e25feb3/snowflake_connector_python-4.7.3-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.whl", hash = "sha256:01abb9d7a2b275f2a048777552d513fc7c9d0538a323c1f846455a4c67e8fab9", size = 2908989, upload-time = "2026-09-03T14:13:19.881Z" },
+    { url = "https://files.pythonhosted.org/packages/17/78/bbc5d4accbf66cf4a69288695263825421f9cea04faf0317d4427ac16b63/snowflake_connector_python-4.7.3-cp310-cp310-win_amd64.whl", hash = "sha256:ba1342f98e561b5cb66db8ef95f13df4605b0dc0ed2af01622785b20f68ffccb", size = 5433803, upload-time = "2026-09-03T14:13:57.618Z" },
+    { url = "https://files.pythonhosted.org/packages/2d/36/a15f98e5fddcdd4ed4d4571035eaffcde5f25f7920a22a24fa5873835148/snowflake_connector_python-4.7.3-cp311-cp311-macosx_14_0_arm64.whl", hash = "sha256:ac139500a41548d7be2c4756da8e4dc45a43581886e4189cf4870bff25dc526a", size = 1197289, upload-time = "2026-09-03T14:13:42.629Z" },
+    { url = "https://files.pythonhosted.org/packages/49/e7/25c1e9f094124e284e0a529607846a43a9bbdf8a016e67e91e084ab2455b/snowflake_connector_python-4.7.3-cp311-cp311-macosx_14_0_x86_64.whl", hash = "sha256:88929f0f9724c9f160d0936cf02f95a0631991a9d660b74e7d38673205ec1fcb", size = 1209701, upload-time = "2026-09-03T14:13:44.232Z" },
+    { url = "https://files.pythonhosted.org/packages/1b/c2/a71c96a1f11643b3e6f85703bc93697bbdf9a957fb7a1d1af9b055d64c13/snowflake_connector_python-4.7.3-cp311-cp311-manylinux2014_aarch64.manylinux_2_17_aarch64.whl", hash = "sha256:0e73865b67e11cd9a35e55d37a548df2b2d827e8e3abaed6b9ed49b886c14f17", size = 2891992, upload-time = "2026-09-03T14:13:21.433Z" },
+    { url = "https://files.pythonhosted.org/packages/cb/7f/a46fc8057d2a9f483667b42ef4a5df8d2e8e92184c320a854e6cf7ab9bbc/snowflake_connector_python-4.7.3-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl", hash = "sha256:380e286ebe5923d14b875c3e9e3b6a4cae695f0b3c37313384ef65dc56328110", size = 2920190, upload-time = "2026-09-03T14:13:22.852Z" },
+    { url = "https://files.pythonhosted.org/packages/15/68/31224af3d2ac988347a92801f55e78de9a8848a12ed3b773b5bf1074ffaf/snowflake_connector_python-4.7.3-cp311-cp311-win_amd64.whl", hash = "sha256:635c1130cec0a057b924d1730948f0ec5992e868ac2c8ffa25f1e7a22fd12ded", size = 5433542, upload-time = "2026-09-03T14:13:59.357Z" },
+    { url = "https://files.pythonhosted.org/packages/32/6f/bdc5436dcce960a4e0e300af0c2219aa0e83d566160b0fa9c391d2b5dab4/snowflake_connector_python-4.7.3-cp312-cp312-macosx_14_0_arm64.whl", hash = "sha256:7d17f2a0e4b49156a57072d079a84db8471cbf511d52c88233df7e374936dbd5", size = 1196264, upload-time = "2026-09-03T14:13:45.555Z" },
+    { url = "https://files.pythonhosted.org/packages/db/02/4957a4ebcde5ff2a8484e3ea1f26049b7e1838d7310564b1e603716f1a84/snowflake_connector_python-4.7.3-cp312-cp312-macosx_14_0_x86_64.whl", hash = "sha256:e18a1c12bd8c271c0aba043f0cf85d8466201ce1eda6a7aafa9fd6dfd4d5e7dc", size = 1209883, upload-time = "2026-09-03T14:13:46.847Z" },
+    { url = "https://files.pythonhosted.org/packages/00/07/40fc43f4fe0e26a71597968cc3421e6858f499a4bfe5566ae712324a109e/snowflake_connector_python-4.7.3-cp312-cp312-manylinux2014_aarch64.manylinux_2_17_aarch64.whl", hash = "sha256:af5b2cc588f10b4d12d21bd6232f61e78055bad2aeb58ce3b88ce71e4af24b51", size = 2932383, upload-time = "2026-09-03T14:13:24.312Z" },
+    { url = "https://files.pythonhosted.org/packages/0d/b3/5ee12f4d6a74d2cb358d80a309eb1c6fe6672680f718de286637ce93d95d/snowflake_connector_python-4.7.3-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl", hash = "sha256:f11781d159f087d5ccf04d3c622a2eeb341b5540a15495cc072b0421b0d38fe1", size = 2965976, upload-time = "2026-09-03T14:13:25.662Z" },
+    { url = "https://files.pythonhosted.org/packages/5c/b1/03cbe5c8601f99d51bffb78c51327c85e68b2273fd3b0aede2845cb691f9/snowflake_connector_python-4.7.3-cp312-cp312-win_amd64.whl", hash = "sha256:0fe0d7c9ff0d7cab163e7f470e119ce1ac67a264a4d644c8adba186a3e5b5a29", size = 5432021, upload-time = "2026-09-03T14:14:01.056Z" },
+    { url = "https://files.pythonhosted.org/packages/ab/38/3b206805b46defb638d02156746d21ba559937e93ca0f04a143dcd0aeceb/snowflake_connector_python-4.7.3-cp313-cp313-macosx_14_0_arm64.whl", hash = "sha256:7a4d325f39c1ae332b35f0238cb2aa6dfe4472a62a8c3b0956f0d96d8c15bec3", size = 1194303, upload-time = "2026-09-03T14:13:48.176Z" },
+    { url = "https://files.pythonhosted.org/packages/e2/d5/ba876a02bcf8f329d755bbee070de8df080ab3434cfef7bdbc2e7dc0de7f/snowflake_connector_python-4.7.3-cp313-cp313-macosx_14_0_x86_64.whl", hash = "sha256:95412cad64a7fafaabb87aee4120489dafcef767dc6ac853090b6f86b8ed6496", size = 1206774, upload-time = "2026-09-03T14:13:49.539Z" },
+    { url = "https://files.pythonhosted.org/packages/70/43/13cf1786f251129d0880f72e1185cc06c1833f27b3d973f913089ac7f431/snowflake_connector_python-4.7.3-cp313-cp313-manylinux2014_aarch64.manylinux_2_17_aarch64.whl", hash = "sha256:a101f32b1f2e0ed3d084503372d698e37290ef9ea211c29c916842802292dddb", size = 2919287, upload-time = "2026-09-03T14:13:27.391Z" },
+    { url = "https://files.pythonhosted.org/packages/04/de/2dfd370d4796510f2f5a6e0db7e1e7ed6cba9ae82fb0bf83a876bff2f828/snowflake_connector_python-4.7.3-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.whl", hash = "sha256:ea6ebb8e2b782876210ed96535d95271cd3dee207f95f87f0ff3e80561bd24cc", size = 2951146, upload-time = "2026-09-03T14:13:29.267Z" },
+    { url = "https://files.pythonhosted.org/packages/1a/ae/8492cd097065a890f9e1085acb207917a7ddf7a07a8fef83097f80e3f149/snowflake_connector_python-4.7.3-cp313-cp313-win_amd64.whl", hash = "sha256:1217e3426c2df6713ba1518ce908b68b5aadcff4fc9ad6760a8947a7561b8c07", size = 5431806, upload-time = "2026-09-03T14:14:03.166Z" },
 ]
 
 [[package]]
@@ -8037,12 +8036,12 @@ name = "trio-typing"
 version = "0.10.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
-    { name = "async-generator", marker = "platform_python_implementation != 'PyPy'" },
-    { name = "importlib-metadata", marker = "platform_python_implementation != 'PyPy'" },
-    { name = "mypy-extensions", marker = "platform_python_implementation != 'PyPy'" },
-    { name = "packaging", marker = "platform_python_implementation != 'PyPy'" },
-    { name = "trio", marker = "platform_python_implementation != 'PyPy'" },
-    { name = "typing-extensions", marker = "platform_python_implementation != 'PyPy'" },
+    { name = "async-generator" },
+    { name = "importlib-metadata" },
+    { name = "mypy-extensions" },
+    { name = "packaging" },
+    { name = "trio" },
+    { name = "typing-extensions" },
 ]
 sdist = { url = "https://files.pythonhosted.org/packages/b5/74/a87aafa40ec3a37089148b859892cbe2eef08d132c816d58a60459be5337/trio-typing-0.10.0.tar.gz", hash = "sha256:065ee684296d52a8ab0e2374666301aec36ee5747ac0e7a61f230250f8907ac3", size = 38747, upload-time = "2023-12-01T02:54:55.508Z" }
 wheels = [
